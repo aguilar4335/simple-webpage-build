@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #06141b, #274a65) no-repeat;
+}
+
+#nav {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+#nav #logo {
+  cursor: pointer;
+}
+
+#nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#nav ul li {
+  cursor: pointer;
+}
+
+#nav ul #about {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+#about:hover {
+  outline: 2px solid #0056b3;
+  color: #000;
+}
+
+.hamburger {
+  font-size: 35px;
+  display: none;
+}
+
+@media screen and (max-width:1024px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #nav ul {
+    display: none;
+  }
+
+  #nav ul.ham_active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: orange;
+    gap: 24px;
+    height: 300px;
+  }
+}
+
+main {
+  text-align: center;
+}
+
+main #container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #007bff;
+  margin-block: 40px;
+  padding-block: 60px;
+  width: 100vw;
+}
+
+main #container1 h1 {
+  margin-bottom: 15px;
+}
+
+main #container1 p {
+  font-size: 17px;
+  color: #313030;
+}
+
+#container2 {
+  margin-block: 10v;
+}
+
+#container2 img {
+  width: 100vw;
+  margin-bottom: 40px;
+}
+
+main #container3 {
+  text-align: center;
+  margin-block: 40px;
+  padding-inline: 10vw;
+}
+
+main #container3 h1 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+main #container3 p {
+  color: #ccc;
+  line-height: 5vh;
+  font-size: 20px;
+}
+
+footer #container4 {
+  text-align: center;
+  background-color: orange;
+  padding-block: 5vh;
+  margin-top: 20vh;
+}
+
+footer #container4 p {
+  color: #000;
+}
