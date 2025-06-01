@@ -1,3 +1,4 @@
 # simple-webpage-build
 
-Its a simple webpage build with minimal effort, just to figure out about the process of building a website and uploading it on github.
+It is a simple webpage built with minimal effort to help me understand the process of building a website and uploading it to GitHub.
+Check out the website here:  https://aguilar4335.github.io/simple-webpage-build/
